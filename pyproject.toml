@@ -16,5 +16,8 @@ dependencies = [
 docs = [
   "mkdocs>=1.6",
   "mkdocs-material>=9.5",
+  "mkdocs-material-extensions>=1.3",
   "markdown-exec>=1.7",
+  "markdown-grid-tables>=0.4",
+  "pymdown-extensions>=10.8",
 ]
