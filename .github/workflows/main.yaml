@@ -34,4 +34,4 @@ jobs:
 
       # Deploy do site MkDocs para gh-pages
       - name: Deploy docs
-        run: uvx mkdocs gh-deploy --force
+        run: uvx --with mkdocs-material mkdocs gh-deploy --force
