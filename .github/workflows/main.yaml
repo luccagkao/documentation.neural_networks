@@ -29,9 +29,6 @@ jobs:
           uv python install "$(cat .python-version)"
 
       # Instala dependências do projeto a partir do uv.lock/pyproject
-      - name: Sync deps (project env)
-        run: uv sync --locked
-
       - name: Sync deps (inclui extra docs)
         run: uv sync --locked --extra docs
 
