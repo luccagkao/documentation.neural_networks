@@ -32,6 +32,7 @@ jobs:
       - name: Sync deps (project env)
         run: uv sync --locked
 
-      # Deploy do site MkDocs para gh-pages
+      # deploy
       - name: Deploy docs
-        run: uvx --with mkdocs-material mkdocs gh-deploy --force
+        run: |
+          mkdocs gh-deploy --force
