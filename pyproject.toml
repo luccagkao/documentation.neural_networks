@@ -28,7 +28,7 @@ docs-all = [
   "mkdocs-glightbox>=0.4",
   "mkdocs-macros-plugin>=1.0",          # macros/jinja2 em páginas
   "mkdocs-awesome-pages-plugin>=2.9",    # ordenação e títulos na nav
-  "mkdocs-redirects>=1.3",               # redirecionamentos estáticos
+  "mkdocs-redirects~=1.2",               # redirecionamentos estáticos
   "mkdocs-minify-plugin>=0.8",           # minificação
   "mkdocs-git-revision-date-localized-plugin>=1.2",  # datas por commit
 ]
