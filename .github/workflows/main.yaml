@@ -1,34 +1,37 @@
 name: ci
+
 on:
   - push
   - pull_request
-  
-# Environment
+
 env:
   CI: true
-  PYTHON_VERSION: 3.12
 
-# Jobs to run
 jobs:
-     
-  # Build and deploy documentation site
   deploy:
+    # publica só em push na main
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
-
-      # Checkout source form GitHub
       - uses: actions/checkout@v4
 
-      # Install Python runtime and dependencies
-      - uses: actions/setup-python@v4
+      # Instala o uv e habilita cache
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v6
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
+          enable-cache: true
 
-      # pip
-      - run: |
-          pip install -r requirements.txt
-          
-      # deploy
-      - run: |
-          mkdocs gh-deploy --force
+      # (Opcional, mas acelera o primeiro run)
+      # Se existir .python-version, "pre-baixa" essa versão.
+      - name: Pre-install pinned Python (optional)
+        if: hashFiles('.python-version') != ''
+        run: |
+          uv python install "$(cat .python-version)"
+
+      # Instala dependências do projeto a partir do uv.lock/pyproject
+      - name: Sync deps (project env)
+        run: uv sync --locked
+
+      # Deploy do site MkDocs para gh-pages
+      - name: Deploy docs
+        run: uvx mkdocs gh-deploy --force

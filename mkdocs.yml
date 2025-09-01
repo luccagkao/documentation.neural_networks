@@ -110,7 +110,7 @@ plugins:
       enable_creation_date: true
   - git-authors
   - git-committers:
-      repository: hsandmann/hsandmann.github.com
+      repository: luccagkao/luccagkao.github.com
       branch: main
   - search
   - badges
