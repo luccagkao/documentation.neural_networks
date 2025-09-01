@@ -28,10 +28,6 @@ jobs:
         run: |
           uv python install "$(cat .python-version)"
 
-      # Instala dependências do projeto a partir do uv.lock/pyproject
-      - name: Sync deps (inclui extra docs)
-        run: uv sync --locked --extra docs
-
-      - name: Deploy docs
-        run: uv run mkdocs gh-deploy --force
+      - run: uv sync --locked --extra docs-all
+      - run: uv run mkdocs gh-deploy --force
 
