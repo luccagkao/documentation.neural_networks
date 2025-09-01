@@ -1,8 +1,8 @@
-site_name: Template de Entrega
-site_author: Sandmann, H.
-site_url: https://hsandmann.github.io/documentation.template
-repo_url: https://github.com/hsandmann/documentation.template
-repo_name: github/documentation.template
+site_name: Redes Neurais 2025.2
+site_author: Kao, L.
+site_url: https://hsandmann.github.io/documentation.neural_networks
+repo_url: https://github.com/hsandmann/documentation.neural_networks
+repo_name: github/documentation.neural_networks
 
 theme:
   name: material
