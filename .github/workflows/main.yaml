@@ -32,7 +32,9 @@ jobs:
       - name: Sync deps (project env)
         run: uv sync --locked
 
-      # deploy
+      - name: Sync deps (inclui extra docs)
+        run: uv sync --locked --extra docs
+
       - name: Deploy docs
-        run: |
-          mkdocs gh-deploy --force
+        run: uv run mkdocs gh-deploy --force
+
