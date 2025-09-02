@@ -33,4 +33,5 @@ docs-all = [
   "mkdocs-git-revision-date-localized-plugin>=1.2",  # datas por commit
   "mkdocs-git-authors-plugin>=0.9",
   "mkdocs-git-committers-plugin-2>=2.5",
+  "mkdocs-badges>=0.5.0",
 ]

@@ -676,6 +676,18 @@ wheels = [
 ]
 
 [[package]]
+name = "mkdocs-badges"
+version = "0.5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "mkdocs" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/57/8b/213b273df9bae458b358c529744246b931d584de1f9c491b3dcfe7123d90/mkdocs_badges-0.5.0.tar.gz", hash = "sha256:68e119406a8709fc89a8a4129545ff5d7935fee965d8cc11b73db649be8880de", size = 20665, upload-time = "2025-08-24T16:50:55.287Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d3/93/0bd75d80a78d1c6687cda4c173f6a94d075b2a48f43b3bcb9f879fbab715/mkdocs_badges-0.5.0-py3-none-any.whl", hash = "sha256:3dd82e4054fa7f79fed30aa9d7a5c08b76ad0ced7d00a163f47ac91dd1dc3614", size = 21900, upload-time = "2025-08-24T16:50:54.343Z" },
+]
+
+[[package]]
 name = "mkdocs-get-deps"
 version = "0.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1236,6 +1248,7 @@ docs-all = [
     { name = "markdown-grid-tables" },
     { name = "mkdocs" },
     { name = "mkdocs-awesome-pages-plugin" },
+    { name = "mkdocs-badges" },
     { name = "mkdocs-git-authors-plugin" },
     { name = "mkdocs-git-committers-plugin-2" },
     { name = "mkdocs-git-revision-date-localized-plugin" },
@@ -1256,6 +1269,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.5" },
     { name = "mkdocs", marker = "extra == 'docs-all'", specifier = ">=1.6" },
     { name = "mkdocs-awesome-pages-plugin", marker = "extra == 'docs-all'", specifier = ">=2.9" },
+    { name = "mkdocs-badges", marker = "extra == 'docs-all'", specifier = ">=0.5.0" },
     { name = "mkdocs-git-authors-plugin", marker = "extra == 'docs-all'", specifier = ">=0.9" },
     { name = "mkdocs-git-committers-plugin-2", marker = "extra == 'docs-all'", specifier = ">=2.5" },
     { name = "mkdocs-git-revision-date-localized-plugin", marker = "extra == 'docs-all'", specifier = ">=1.2" },
