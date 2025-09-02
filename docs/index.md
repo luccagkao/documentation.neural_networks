@@ -1,9 +1,9 @@
-# Template de Entrega
+# Redes Neurais 2025.2
 
 
 ???+ info inline end "Edição"
 
-    2025.1
+    2025.2
 
 
 ## Grupo/Kit X
@@ -17,20 +17,19 @@
 
 
 
-!!! tip "Instruções"
+<!-- !!! tip "Instruções"
 
     Vocês devem utilizar este template como um bloco de notas para registrar o que foi feito e o que falta fazer. Vocês devem adicionar as informações necessárias.
-    O template deve ser editado e atualizado a cada entrega, registrando assim a data de entrega e o que foi feito até o momento via Git.
+    O template deve ser editado e atualizado a cada entrega, registrando assim a data de entrega e o que foi feito até o momento via Git. -->
 
 ## Entregas
 
-- [x] Roteiro 1 - Data 23/02/2025
-- [ ] Roteiro 2
-- [ ] Roteiro 3
-- [ ] Roteiro 4
-- [ ] Projeto
+- [ ] Exercício Data - 05/09/2025
+- [ ] Exercício Perceptron - 12/09/2025
+- [ ] Exercício MLP - 19/09/2025
+- [ ] Exercício Metrics - 26/09/2025
 
-## Diagramas
+<!-- ## Diagramas
 
 Use o [Mermaid](https://mermaid.js.org/intro/){:target='_blank'} para criar os diagramas de documentação.
 
@@ -97,4 +96,4 @@ Lorem ipsum dolor sit amet
 
 ## Referências
 
-[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/){:target='_blank'}
+[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/){:target='_blank'} -->
