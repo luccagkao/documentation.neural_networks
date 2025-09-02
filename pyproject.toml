@@ -30,4 +30,5 @@ docs-all = [
   "mkdocs-git-committers-plugin-2>=2.5",
   "mkdocs-badges>=0.5.0",
   "mkdocs-render-swagger-plugin>=0.0.5",
+  "termynal>=0.11",
 ]
