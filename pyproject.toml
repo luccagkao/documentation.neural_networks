@@ -36,4 +36,5 @@ docs-all = [
   "mkdocs-git-committers-plugin-2>=2.5", # lista de contribuidores
   "termynal>=0.11",                      # terminais animados (plugin termynal)
   "mkdocs-git-revision-date-localized-plugin>=1.4",
+  "mkdocs-minify-plugin>=0.8",
 ]
