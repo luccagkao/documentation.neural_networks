@@ -827,6 +827,21 @@ wheels = [
 ]
 
 [[package]]
+name = "mkdocs-git-revision-date-localized-plugin"
+version = "1.4.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "babel" },
+    { name = "gitpython" },
+    { name = "mkdocs" },
+    { name = "pytz" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5e/f8/a17ec39a4fc314d40cc96afdc1d401e393ebd4f42309d454cc940a2cf38a/mkdocs_git_revision_date_localized_plugin-1.4.7.tar.gz", hash = "sha256:10a49eff1e1c3cb766e054b9d8360c904ce4fe8c33ac3f6cc083ac6459c91953", size = 450473, upload-time = "2025-05-28T18:26:20.697Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/53/b6/106fcc15287e7228658fbd0ad9e8b0d775becced0a089cc39984641f4a0f/mkdocs_git_revision_date_localized_plugin-1.4.7-py3-none-any.whl", hash = "sha256:056c0a90242409148f1dc94d5c9d2c25b5b8ddd8de45489fa38f7fa7ccad2bc4", size = 25382, upload-time = "2025-05-28T18:26:18.907Z" },
+]
+
+[[package]]
 name = "mkdocs-glightbox"
 version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1382,6 +1397,7 @@ docs-all = [
     { name = "mkdocs-badges" },
     { name = "mkdocs-git-authors-plugin" },
     { name = "mkdocs-git-committers-plugin-2" },
+    { name = "mkdocs-git-revision-date-localized-plugin" },
     { name = "mkdocs-glightbox" },
     { name = "mkdocs-jupyter" },
     { name = "mkdocs-material" },
@@ -1402,6 +1418,7 @@ requires-dist = [
     { name = "mkdocs-badges", marker = "extra == 'docs-all'", specifier = ">=0.4" },
     { name = "mkdocs-git-authors-plugin", marker = "extra == 'docs-all'", specifier = ">=0.9" },
     { name = "mkdocs-git-committers-plugin-2", marker = "extra == 'docs-all'", specifier = ">=2.5" },
+    { name = "mkdocs-git-revision-date-localized-plugin", marker = "extra == 'docs-all'", specifier = ">=1.4" },
     { name = "mkdocs-glightbox", marker = "extra == 'docs-all'", specifier = ">=0.4" },
     { name = "mkdocs-jupyter", marker = "extra == 'docs-all'", specifier = ">=0.24" },
     { name = "mkdocs-material", marker = "extra == 'docs-all'", specifier = ">=9.5" },
