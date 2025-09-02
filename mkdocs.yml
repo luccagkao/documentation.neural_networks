@@ -123,6 +123,10 @@ plugins:
       prompt_literal_start:
         - "$"
         - ">"
+  - mkdocs-jupyter:
+      execute: true            # executa o notebook durante o build
+      include_source: true     # adiciona link para download do .ipynb
+      kernel_name: python3
 
 extra_javascript:
   - https://unpkg.com/mathjax/es5/tex-mml-chtml.js
@@ -140,3 +144,4 @@ nav:
     - Roteiro 3: ./roteiro3/main.md
     - Roteiro 4: ./roteiro4/main.md
   - Projeto: ./projeto/main.md
+  - Teste (Notebook): ./data/ex_1.ipynb
