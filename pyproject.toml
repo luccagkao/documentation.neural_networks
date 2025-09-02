@@ -31,4 +31,5 @@ docs-all = [
   "mkdocs-redirects~=1.2",               # redirecionamentos estáticos
   "mkdocs-minify-plugin>=0.8",           # minificação
   "mkdocs-git-revision-date-localized-plugin>=1.2",  # datas por commit
+  "mkdocs-git-authors-plugin>=0.9",
 ]
