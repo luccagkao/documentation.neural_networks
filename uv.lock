@@ -831,6 +831,17 @@ wheels = [
 ]
 
 [[package]]
+name = "mkdocs-render-swagger-plugin"
+version = "0.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "mkdocs" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/de/0b/cf5e4e9529a8068d4b2def4b38540f7a5762283bdd5b652ee083b8a7c9c6/mkdocs_render_swagger_plugin-0.1.2-py3-none-any.whl", hash = "sha256:0340d45e12a0f1633a4b8af2eb99ea75469006ddf418ef0f1acd51ed1e4969e4", size = 5988, upload-time = "2024-05-26T19:34:44.442Z" },
+]
+
+[[package]]
 name = "natsort"
 version = "8.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1258,6 +1269,7 @@ docs-all = [
     { name = "mkdocs-material-extensions" },
     { name = "mkdocs-minify-plugin" },
     { name = "mkdocs-redirects" },
+    { name = "mkdocs-render-swagger-plugin" },
     { name = "pymdown-extensions" },
 ]
 
@@ -1279,6 +1291,7 @@ requires-dist = [
     { name = "mkdocs-material-extensions", marker = "extra == 'docs-all'", specifier = ">=1.3" },
     { name = "mkdocs-minify-plugin", marker = "extra == 'docs-all'", specifier = ">=0.8" },
     { name = "mkdocs-redirects", marker = "extra == 'docs-all'", specifier = "~=1.2" },
+    { name = "mkdocs-render-swagger-plugin", marker = "extra == 'docs-all'", specifier = ">=0.0.5" },
     { name = "numpy", specifier = ">=2.3.2" },
     { name = "pandas", specifier = ">=2.3.2" },
     { name = "pymdown-extensions", marker = "extra == 'docs-all'", specifier = ">=10.8" },
