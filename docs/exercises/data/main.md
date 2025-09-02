@@ -1,0 +1,3 @@
+# Exploração de dados
+
+Nessa seção, eu explorei a natureza dos dados, como eles podem se comportar com classes separadas de forma linear, não linear, entendendo como elas funcionam e visualizando isso em gráficos. Ao final, foi realizada de forma breve uma manipulação com base no dataset Spaceship Titanic, explorando suas variáveis, a distribuição dos dados e como lidar com algumas observações com dados faltantes. Além disso, explorei também como faria para pré processar os dados visando dar entrada desses em uma rede neural.
