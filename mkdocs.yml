@@ -138,11 +138,8 @@ extra_javascript:
 nav:
   - Home: index.md
   - Exercises:
-      - Data:
-          - Exercise 1: ./exercises/data/ex_1.ipynb
-          - Exercise 2: ./exercises/data/ex_2.ipynb
-          - Exercise 3: ./exercises/data/ex_3.ipynb
-      - Perceptron:
-          - Exercise 1: ./exercises/perceptron/ex_1.ipynb
+      - Data: ./exercises/data/dados.ipynb
+      # - Perceptron:
+      #     - Exercise 1: ./exercises/perceptron/ex_1.ipynb
           # - Exercise 2: ./exercises/perceptron/ex_2.ipynb
           # - Exercise 3: ./exercises/perceptron/ex_3.ipynb
