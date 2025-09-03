@@ -69,8 +69,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - markdown_grid_tables
-  - pymdownx.arithmatex:
-      generic: true
+  # - pymdownx.arithmatex:
+  #     generic: true
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
@@ -137,11 +137,10 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
 
+extra_css:
+  - stylesheets/overrides.css
+
 nav:
   - Home: index.md
   - Exercises:
       - Data: ./exercises/data/dados.ipynb
-      # - Perceptron:
-      #     - Exercise 1: ./exercises/perceptron/ex_1.ipynb
-          # - Exercise 2: ./exercises/perceptron/ex_2.ipynb
-          # - Exercise 3: ./exercises/perceptron/ex_3.ipynb
