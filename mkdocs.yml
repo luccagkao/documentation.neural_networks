@@ -124,8 +124,8 @@ plugins:
         - "$"
         - ">"
   - mkdocs-jupyter:
-      execute: true            # executa o notebook durante o build
-      include_source: true     # adiciona link para download do .ipynb
+      execute: true
+      include_source: true
       kernel_name: python3
 
 extra_javascript:
@@ -134,6 +134,8 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
   - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
+  - javascripts/mathjax.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
 
 nav:
   - Home: index.md
