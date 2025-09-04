@@ -3,3 +3,6 @@ env/
 .cache/
 .vscode/
 target/
+docs/exercises/dados/data/sample_submission.csv
+docs/exercises/dados/data/test.csv
+docs/exercises/dados/data/train.csv
