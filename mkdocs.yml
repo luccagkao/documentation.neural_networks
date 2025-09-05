@@ -64,46 +64,72 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
 
+# markdown_extensions:
+#   - admonition
+#   - attr_list
+#   - md_in_html
+#   - markdown_grid_tables
+#   - pymdownx.arithmatex:
+#       generic: true
+#   - pymdownx.details
+#   - pymdownx.highlight:
+#       anchor_linenums: true
+#       line_spans: __span
+#       pygments_lang_class: true
+#   - pymdownx.emoji:
+#       emoji_index: !!python/name:material.extensions.emoji.twemoji 
+#       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+#   - pymdownx.inlinehilite
+#   - pymdownx.snippets:
+#       url_download: true
+#   - pymdownx.superfences:
+#       custom_fences:
+#         - name: mermaid
+#           class: mermaid
+#           format: !!python/name:pymdownx.superfences.fence_code_format
+#         - name: python
+#           class: python
+#           validator: !!python/name:markdown_exec.validator
+#           format: !!python/name:markdown_exec.formatter
+#   - pymdownx.tabbed:
+#       alternate_style: true
+#   - pymdownx.tasklist:
+#       custom_checkbox: true  
+#   - footnotes
+#   - pymdownx.critic
+#   - pymdownx.caret
+#   - pymdownx.keys
+#   - pymdownx.mark
+#   - pymdownx.tilde
+#   - pymdownx.blocks.caption
+#   - tables
+
 markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
   - markdown_grid_tables
-  # - pymdownx.arithmatex:
-  #     generic: true
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji 
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.snippets:
-      url_download: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-        - name: python
-          class: python
-          validator: !!python/name:markdown_exec.validator
-          format: !!python/name:markdown_exec.formatter
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true  
-  - footnotes
+  - pymdownx.superfences
+  - tables
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.blocks.caption
-  - tables
-      
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true  
+
 plugins:
   - glightbox
   - git-revision-date-localized:
@@ -129,18 +155,27 @@ plugins:
       kernel_name: python3
 
 extra_javascript:
-  - https://unpkg.com/mathjax/es5/tex-mml-chtml.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
-  - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
-  - javascripts/mathjax.js
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
-
+  - javascripts/katex.js                 # seu arquivo local
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  
+  # # 1) Config primeiro
+  # - javascripts/mathjax.js
+  # # 2) UMA única cópia do MathJax v3
+  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js
+  
+  # - https://unpkg.com/mathjax/es5/tex-mml-chtml.js
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
+  # - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
+  
 extra_css:
   - stylesheets/overrides.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
 
 nav:
   - Home: index.md
   - Exercises:
-      - Data: ./exercises/data/dados.ipynb
+      - Data: ./exercises/dados/dados.ipynb
