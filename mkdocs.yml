@@ -177,5 +177,5 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Exercises:
-      - Data: ./exercises/dados/dados.ipynb
+  - Exercícios:
+      - Dados: ./exercicios/dados/dados.ipynb
