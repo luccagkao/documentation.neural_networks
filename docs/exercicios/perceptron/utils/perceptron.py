@@ -38,27 +38,62 @@ class Perceptron:
         self.converged = False
         self.epochs_run = 0
 
-    def train(self):
+    def train(self, patience: int = 10, min_delta: int = 0):
+        best_updates = np.inf
+        best_weights = self.weights.copy()
+        best_bias = float(self.bias)
+        patience_count = 0
+
+        self.stop_reason = "max_epochs"
+        self.converged = False
+        self.accuracy_per_epoch = []
+        self.updates_per_epoch = []
+
         for epoch in range(self.max_epochs):
             updates = 0
 
-            for x, y in zip(self.x, self.y):
-                y_pred = 1 if (np.dot(x, self.weights) + self.bias) >= 0 else 0
-                error = y - y_pred
+            indices = np.random.permutation(len(self.x))
+            x_shuffled = self.x[indices]
+            y_shuffled = self.y[indices]
 
+            for x_i, y_i in zip(x_shuffled, y_shuffled):
+                y_pred = 1 if (np.dot(x_i, self.weights) + self.bias) >= 0 else 0
+                error = y_i - y_pred
                 if error != 0:
                     updates += 1
-                    self._rebalance(x=x, error=error)
+                    self._rebalance(x=x_i, error=error)
 
             acc = 1.0 - (updates / len(self.y))
             self.accuracy_per_epoch.append(acc)
             self.updates_per_epoch.append(updates)
-
             self.epochs_run = epoch + 1
+
             if updates == 0:
                 self.converged = True
+                self.stop_reason = "No errors (linearly separable)"
+
+                best_updates = 0
+                best_weights = self.weights.copy()
+                best_bias = float(self.bias)
                 break
 
+            if updates + min_delta < best_updates:
+                best_updates = updates
+                best_weights = self.weights.copy()
+                best_bias = float(self.bias)
+                patience_count = 0  # reset paciência
+            else:
+                patience_count += 1
+
+            if patience_count >= patience:
+                self.stop_reason = f"No improvement for {patience} epochs"
+                break
+
+        self.weights = best_weights
+        self.bias = best_bias
+        self.best_updates = best_updates
+
+    
     def predict(self, X_test=None, y_test=None):
         if X_test is None:
             raise ValueError("Entre com o X_test")

@@ -155,7 +155,7 @@ plugins:
       kernel_name: python3
 
 extra_javascript:
-  - javascripts/katex.js                 # seu arquivo local
+  - javascripts/katex.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
   
