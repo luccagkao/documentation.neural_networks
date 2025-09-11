@@ -177,5 +177,6 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Exercícios:
+  - Capítulos:
       - Dados: ./exercicios/dados/dados.ipynb
+      - Perceptron: ./exercicios/perceptron/perceptron.ipynb
