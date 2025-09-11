@@ -7,7 +7,7 @@ Além de análises pontuais, foram realizadas elaborações completas, com imple
 ## Entregas
 
 - [X] Exercício Data - 05/09/2025
-- [ ] Exercício Perceptron - 12/09/2025
+- [X] Exercício Perceptron - 12/09/2025
 - [ ] Exercício MLP - 19/09/2025
 - [ ] Exercício Metrics - 26/09/2025
 
