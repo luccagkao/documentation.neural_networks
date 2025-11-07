@@ -180,6 +180,8 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Projetos:
+      - Projetos: ./projetos/index.md
   - Capítulos:
       - Dados: ./exercicios/dados/dados.ipynb
       - Perceptron: ./exercicios/perceptron/perceptron.ipynb
