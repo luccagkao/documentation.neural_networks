@@ -1,7 +1,7 @@
 # Projetos
 
-Projeto 1: https://esdrasgc.github.io/customer-churn-prediction-kaggle/
+[Projeto 1](https://esdrasgc.github.io/customer-churn-prediction-kaggle/)
 
-Projeto 2: https://linkolnr.github.io/china-real-state-regression-kaggle/
+[Projeto 2](https://linkolnr.github.io/china-real-state-regression-kaggle/)
 
-Projeto 3: https://luccagkao.github.io/comfyui-experiment/
+[Projeto 3](https://luccagkao.github.io/comfyui-experiment/)
